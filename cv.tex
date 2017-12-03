@@ -1,0 +1,156 @@
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{MinionPro}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[big]{layaureo}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage[export]{adjustbox}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\usepackage{titlesec}
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+\setlength{\parindent}{0in}
+\usepackage[shortlabels]{enumitem}
+
+\makeatletter
+\newlength{\bibhang}
+\setlength{\bibhang}{.9em}
+\newlength{\bibsep}
+ {\@listi \global\bibsep\itemsep \global\advance\bibsep by\parsep}
+\newlist{bibsection}{itemize}{3}
+\setlist[bibsection]{label=,leftmargin=\bibhang,%
+        itemindent=-\bibhang,
+        itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+        topsep=0pt}
+\newlist{bibenum}{enumerate}{3}
+\setlist[bibenum]{label=[\arabic*],resume,leftmargin={\bibhang+\widthof{[999]}},%
+        itemindent=-\bibhang,
+        itemsep=\bibsep,parsep=\z@,partopsep=0pt,
+        topsep=0pt}
+\let\oldendbibenum\endbibenum
+\def\endbibenum{\oldendbibenum\vspace{-.6\baselineskip}}
+\let\oldendbibsection\endbibsection
+\def\endbibsection{\oldendbibsection\vspace{-.6\baselineskip}}
+\makeatother
+
+\begin{document}
+
+%\pagestyle{empty}
+
+\par{\centering{\Huge Erik Gahner Larsen}\bigskip\par}
+
+\section{Personal data}
+\begin{minipage}{0.4\textwidth}
+\begin{tabular}{rl}
+\textsc{Work Address:} & School of Politics and International Relations \\
+& University of Kent \\
+& Canterbury CT2 7NX \\
+\textsc{Phone:} & +44 739 3343 789\\
+\textsc{Work/Personal email:} & \href{mailto:e.g.larsen@kent.ac.uk}{e.g.larsen@kent.ac.uk} / \href{mailto:erikgahner@gmail.com}{erikgahner@gmail.com} \\
+\textsc{Work/Personal Webpage:} & \href{http://egl.dk/}{egl.dk} / \href{http://erikgahner.dk/}{erikgahner.dk} \\
+\end{tabular}
+\end{minipage}
+
+\vspace{.7em}
+\section{Academic appointments}
+
+\begin{tabular}{r|p{12cm}}
+\emph{Current} & Lecturer, School of Politics and International Relations, University of Kent \\
+ & \footnotesize{September 2017--} \\
+ \multicolumn{2}{c}{} \\
+& Research Assistant, Department of Political Science, University of Southern Denmark \\
+& \footnotesize{September 2016--August 2017} \\
+\multicolumn{2}{c}{} \\
+ & PhD Fellow, Department of Political Science, University of Southern Denmark \\
+& \footnotesize{September 2012--September 2016.} \\
+\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+\vspace{.7em}
+\section{Education}
+
+\begin{tabular}{r|p{11cm}}
+2012--16 & Ph.D., Political Science, University of Southern Denmark \\
+\multicolumn{2}{c}{} \\
+
+\textsc{2014--15} & Visiting scholar, Department of Political Science, Duke University\\
+\multicolumn{2}{c}{} \\
+
+\textsc{2011--14} & M.Sc., Political Science, University of Southern Denmark\\
+\multicolumn{2}{c}{} \\
+
+\textsc{2008--11} & B.Sc., Political Science, University of Southern Denmark\\
+\multicolumn{2}{c}{} \\
+
+\end{tabular}
+
+%\input{publications}
+
+\vspace{.7em}
+\section{Fellowships, honors \& awards}
+\begin{tabular}{r|p{11cm}}
+Nov 2016 & Departmental Development Grant (Department of Political Science, University of Southern Denmark) for ``How do Journalists Cover Political Opinion Polls?'' w. Zolt\'{a}n Fazekas, DKK 50,000 (approx. EUR 6,700)\\
+\multicolumn{2}{c}{} \\
+
+Aug 2014 & Augustinus Fonden, travel grant, DKK 25,000 (approx. EUR 3,300) \\
+\multicolumn{2}{c}{} \\
+\end{tabular}
+
+\vspace{.7em}
+\section{Teaching experience}
+\begin{tabular}{r|p{11cm}}
+
+2017 & Introduction to Political Science \\
+& \footnotesize{School of Politics and International Relations, University of Kent} \\
+\multicolumn{2}{c}{} \\
+
+2017 & Behavioral Public Policy \\
+& \footnotesize{M.Sc. level, Department of Political Science, University of Southern Denmark} \\
+\multicolumn{2}{c}{} \\
+
+2016 & Public Policy \\
+& \footnotesize{B.Sc. level, Department of Political Science, University of Southern Denmark} \\
+\multicolumn{2}{c}{} \\
+
+2016 & Causal Analysis in Public Policy \\
+& \footnotesize{M.Sc. level, Department of Political Science, University of Southern Denmark} \\
+\multicolumn{2}{c}{} \\
+
+2015 & Advanced Applied Statistics \\
+& \footnotesize{M.Sc. level, Department of Political Science, University of Southern Denmark} \\
+\multicolumn{2}{c}{} \\
+\end{tabular}
+
+\vspace{.7em}
+\section{Professional service}
+\begin{tabular}{r|p{11cm}}
+\textsc{Referee Service} & Comparative Political Studies; Contention: The Multidisciplinary Journal of Social Protest; International Journal of Public Opinion Research; JCMS: Journal of Common Market Studies; Journal of Elections, Public Opinion \& Parties; Journal of Politics; Journal of Transatlantic Studies; Policy Studies Journal; Political Psychology \\
+\multicolumn{2}{c}{} \\
+ & For additional information, see \href{http://publons.com/a/1171320/}{publons.com/a/1171320/} \\
+
+\end{tabular}
+
+\vspace{.7em}
+\section{Conference participation}
+Midwest Political Science Association: 2014, 2015, 2016.
+
+Danish Political Science Association: 2013, 2016.
+
+\vspace{.7em}
+\section{Languages}
+Danish, English, R.
+
+\vspace{.7em}
+\section{Media appearances (Danish)}
+Presselogen (TV 2 News), Nyhederne (TV2 News), Mennesker \& Medier (DR P1), Fyens Stiftstidende, Jyllands-Posten, Kristeligt Dagblad, Politiken
+
+\vspace{1em}
+\begin{center}
+Last updated: \today
+\end{center}
+
+\end{document}
